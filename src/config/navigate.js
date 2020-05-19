@@ -19,6 +19,10 @@ const list = {
             title: 'form 组件',
             list: [
                 {
+                    title: 'VPage 页面组件',
+                    path: '/components/VPage'
+                },                
+                {
                     title: 'VGrid 表格',
                     path: '/components/VGrid'
                 },

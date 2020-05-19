@@ -11,6 +11,13 @@ const routers = [
     },
     // wis ui 的
     {
+        path: '/components/VPage',
+        meta: {
+            title: 'VPage 页面组件'
+        },
+        component: (resolve) => require(['./views/components_wis/VPage.vue'], resolve)        
+    },
+    {
         path: '/components/VGrid',
         meta: {
             title: 'VGrid 表格'
@@ -18,6 +25,26 @@ const routers = [
         component: (resolve) => require(['./views/components_wis/VGrid.vue'], resolve)        
     },
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
     // 废除的
     {
