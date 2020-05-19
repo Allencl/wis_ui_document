@@ -16,7 +16,7 @@ const list = {
     components: [
         {
             type: 'Layout',
-            title: '布局',
+            title: 'form 组件',
             list: [
                 {
                     title: 'Layout 栅格布局',
