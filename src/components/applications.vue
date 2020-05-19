@@ -54,16 +54,16 @@
             <DropdownMenu slot="list">
                 <DropdownItem name="iview">
                     <img src="https://file.iviewui.com/icon/iview.png" class="apps-img">
-                    <span class="apps-name">iView</span>
+                    <span class="apps-name">iView 官网</span>
                 </DropdownItem>
-                <DropdownItem name="iview-weapp">
+                <!-- <DropdownItem name="iview-weapp">
                     <img src="https://file.iviewui.com/icon/iview.png" class="apps-img">
                     <span class="apps-name">iView Weapp</span>
                 </DropdownItem>
                 <DropdownItem name="inmap">
                     <img src="https://file.iviewui.com/icon/inmap.png" class="apps-img">
                     <span class="apps-name">inMap</span>
-                </DropdownItem>
+                </DropdownItem> -->
             </DropdownMenu>
         </Dropdown>
     </div>
@@ -73,11 +73,12 @@
         methods: {
             handleChange (name) {
                 if (name === 'iview') {
-                    window.location.href = 'http://iview.talkingdata.com';
+                    window.open("https://www.iviewui.com/docs/introduce","_blank");       
+                    // window.location.href = 'http://iview.talkingdata.com';
                 } else if (name === 'iview-weapp') {
-                    window.location.href = 'http://inmap.talkingdata.com/wx/index_prod.html';
+                    // window.location.href = 'http://inmap.talkingdata.com/wx/index_prod.html';
                 } else if (name === 'inmap') {
-                    window.location.href = 'http://inmap.talkingdata.com';
+                    // window.location.href = 'http://inmap.talkingdata.com';
                 }
             }
         }

@@ -12,7 +12,7 @@ code.wxml = `
 
 code.install = `
 # 从 GitHub 下载后，安装依赖
-npm install
+npm install wis-ui@3.3.1-dev --save-dev
 
 # 编译组件
 npm run dev

@@ -11,7 +11,7 @@
     <Menu mode="horizontal" :active-name="currentActiveKey" @on-select="handleSelect">
         <div class="wrapper-header-nav">
             <router-link to="/" class="wrapper-header-nav-logo">
-                <img src="../images/logo.png">
+                <img src="../images/logo-footer.png">
             </router-link>
             <ApplicationMenu></ApplicationMenu>
             <div class="wrapper-header-nav-search">
@@ -26,7 +26,7 @@
                     </i-option>
                 </i-select>
             </div>
-            <div class="wrapper-header-nav-list">
+            <!-- <div class="wrapper-header-nav-list">
                 <Menu-item name="index">
                     <Icon type="ios-navigate"></Icon>
                     首页
@@ -39,7 +39,7 @@
                     <Button type="ghost" size="small" icon="social-github" @click="handleGoToGitHub"></Button>
                     <Button type="ghost" size="small" icon="social-twitter" @click="handleGoToTwitter"></Button>
                 </ButtonGroup>
-            </div>
+            </div> -->
         </div>
     </Menu>
 </template>

@@ -24,7 +24,7 @@
         <h1>更新日志</h1>
         <article class="doc-update">
             <Timeline pending>
-                <Timeline-item>
+                <!-- <Timeline-item>
                     <Anchor title="2.0.0" h2></Anchor>
                     <p>
                         <code>2018-07-28</code>
@@ -65,18 +65,18 @@
                         <li>修复 Alert 缺失 info 图标的 bug。</li>
                         <li>修复 Page 警告的问题。</li>
                     </ul>
-                </Timeline-item>
+                </Timeline-item> -->
                 <Timeline-item color="green">
                     <Icon type="trophy" size="18" slot="dot"></Icon>
-                    <Anchor title="1.0.0" h2></Anchor>
+                    <Anchor title="^3.3.1-dev" h2></Anchor>
                     <p>
-                        <code>2018-06-01</code>
+                        <code>2020-05-21</code>
                     </p>
                     <ul>
                         <li>完成 30 个组件。</li>
                     </ul>
                 </Timeline-item>
-                <Timeline-item>
+                <!-- <Timeline-item>
                     <Anchor title="0.0.1" h2></Anchor>
                     <p>
                         <code>2018-05-15</code>
@@ -84,7 +84,7 @@
                     <ul>
                         <li>立项。</li>
                     </ul>
-                </Timeline-item>
+                </Timeline-item> -->
             </Timeline>
         </article>
     </i-article>

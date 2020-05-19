@@ -39,10 +39,10 @@
 
                             <template>
                                 <div style="margin-top: 20px"></div>
-                                <div class="article-qrcode">
+                                <!-- <div class="article-qrcode">
                                     <img src="../images/code.jpg">
                                     <span>微信扫描体验</span>
-                                </div>
+                                </div> -->
                                 <!--<a v-if="ad_index === 1" href="https://cn.udacity.com/course/intro-to-python-nanodegree-foundation&#45;&#45;nd000-cn-python/?utm_source=iviewui&utm_medium=banner&utm_campaign=python" target="_blank" @click="handleAsideAd('aside-udacity')" class="wrapper-aside wrapper-aside-no-padding">-->
                                     <!--<img src="../images/aside-udacity-1.jpg">-->
                                 <!--</a>-->
@@ -91,86 +91,7 @@
                 </Row>
             </div>
         </div>
-        <div class="footer">
-            <div class="footer-main">
-                <Row>
-                    <i-col span="5">
-                        <h4>
-                            <Icon type="social-github"></Icon>
-                            GitHub
-                        </h4>
-                        <ul>
-                            <li>
-                                <a href="https://github.com/iview/iview" target="_blank">iView</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/TalkingData/iview-weapp" target="_blank">iView Weapp</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/iview/weapp-doc" target="_blank">iView Weapp Doc</a>
-                            </li>
-                        </ul>
-                    </i-col>
-                    <i-col span="5">
-                        <h4>
-                            <Icon type="link"></Icon>
-                            相关站点
-                        </h4>
-                        <ul>
-                            <li>
-                                <a href="https://www.talkingdata.com/" target="_blank">TalkingData</a> - 用数据的心智去超越
-                            </li>
-                            <li>
-                                <a href="http://mi.talkingdata.com/" target="_blank">Marketing Intelligence</a> - 免费公开大数据查询平台
-                            </li>
-                            <li>
-                                <a href="https://github.com/TalkingData/inmap/" target="_blank">inMap</a> - 大数据地理信息可视化框架
-                            </li>
-                            <li>
-                                <a href="https://github.com/TalkingData/Fregata" target="_blank">Fregata</a> - 大规模机器学习算法库
-                            </li>
-                            <li>
-                                <a href="https://github.com/TalkingData/Myna" target="_blank">Myna</a> - Android 平台情景感知框架
-                            </li>
-                            <li>
-                                <a href="https://github.com/TalkingData/owl" target="_blank">OWL</a> - 分布式监控系统
-                            </li>
-                        </ul>
-                    </i-col>
-                    <i-col span="5" offset="2">
-                        <h4>
-                            <Icon type="chatbubbles"></Icon>
-                            社区
-                        </h4>
-                        <ul>
-                            <li>
-                                <a href="https://github.com/TalkingData/iview-weapp/issues" target="_blank">反馈建议</a>
-                            </li>
-                            <li>
-                                <a href="https://www.iviewui.com/new-issue" target="_blank">提交bug</a>
-                            </li>
-                            <li>
-                                <a href="https://gitter.im/iview/iview" target="_blank">在线讨论</a>
-                            </li>
-                            <li>
-                                <a href="https://segmentfault.com/t/iview" target="_blank">SegmentFault</a>
-                            </li>
-                        </ul>
-                    </i-col>
-                    <i-col span="5" offset="2">
-                        <div class="footer-aside">
-                            <div class="footer-logo">
-                                <img src="../images/logo-footer.png">
-                            </div>
-                            <!--<div class="footer-version">-->
-                                <!--<p>{{ $t('index.current_version') }}</p>-->
-                                <!--<p>Vue.js 2.5.13, iView 2.9.0</p>-->
-                            <!--</div>-->
-                        </div>
-                    </i-col>
-                </Row>
-            </div>
-        </div>
+
         <!--<Modal v-model="donate" v-if="lang === 'zh-CN'" title="支持 iView 的开发" @on-ok="handleModalClose" @on-cancel="handleModalClose" class-name="vertical-center-modal">-->
             <!--<div class="ivu-article">-->
                 <!--<p>iView 是采用 MIT 许可的开源项目，您可以在个人或企业项目中免费使用。不过，如果您觉得 iView 对您的项目带来了帮助，提高开发效率，可以用捐助来表示您的谢意：)</p>-->

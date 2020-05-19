@@ -20,7 +20,7 @@
                     </Badge>
                 </template>
             </Menu-item>
-            <div class="navigate-group">组件</div>
+            <div class="navigate-group">wis-ui 组件</div>
             <Menu-group v-for="item in navigate.components" :key="item.type" :title="item.title">
                 <Menu-item v-for="component in item.list" :key="component.path" :name="component.path">
                     <template>
@@ -29,6 +29,12 @@
                     </template>
                 </Menu-item>
             </Menu-group>
+            <div class="navigate-group">
+                <a href="https://www.iviewui.com/docs/introduce" target="_blank">
+                    <span>iview 官网</span>
+                    <Icon type="chatbubbles"></Icon>
+                </a>
+            </div>
         </Menu>
     </div>
 </template>
