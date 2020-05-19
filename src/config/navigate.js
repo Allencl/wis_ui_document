@@ -19,8 +19,8 @@ const list = {
             title: 'form 组件',
             list: [
                 {
-                    title: 'Layout 栅格布局',
-                    path: '/components/layout'
+                    title: 'VGrid 表格',
+                    path: '/components/VGrid'
                 },
                 {
                     title: 'Grid 宫格',

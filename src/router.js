@@ -9,6 +9,17 @@ const routers = [
         },
         component: (resolve) => require(['./views/index.vue'], resolve)
     },
+    // wis ui 的
+    {
+        path: '/components/VGrid',
+        meta: {
+            title: 'VGrid 表格'
+        },
+        component: (resolve) => require(['./views/components_wis/VGrid.vue'], resolve)        
+    },
+
+
+    // 废除的
     {
         path: '/docs/guide/start',
         meta: {
