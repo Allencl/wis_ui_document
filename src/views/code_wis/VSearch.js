@@ -14,6 +14,35 @@ code.HTML = `
 				name="name" 
 			>
 			</VSearchColumn>
+
+			<VSearchColumn 
+				v-model="searchForm.createTime" 
+				type="date" 
+				label="时间" 
+				name="createTime" 
+			>
+			</VSearchColumn>
+
+            <VSearchColumn
+				v-model='searchForm.num' 
+				type="number" 
+				label='数字'   
+				name='num'  		
+				
+			>
+			</VSearchColumn>
+
+			<VSearchColumn 
+				v-model='searchForm.enabled' 
+				type="select" 
+				label='数据字典' 
+				name='enabled' 
+				typeCode="YES_OR_NO"
+			>
+			</VSearchColumn>
+
+
+
 		</VSearch>
 
 		<VGrid 
@@ -28,7 +57,7 @@ code.HTML = `
 	export default {
 		data() {
 			return {
-				searchForm: {'name':''},
+				searchForm: {name:'',num:0,createTime:'',enabled:''},
 				listColumns: [{title:"姓名",key: 'name'}]
 			};
 		},
@@ -37,6 +66,7 @@ code.HTML = `
 		}
 	};
 </script>
+
 `;
 
 export default code;
