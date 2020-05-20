@@ -91,7 +91,14 @@
                             <td>点击取消后，是否回到之前的路由地址，若没有回到home页。</td> 
                             <td>Boolean</td> 
                             <td>true</td>
-                        </tr>                         
+                        </tr>  
+                        <tr>
+                            <td>width</td> 
+                            <td>type等于Drawer、Modal时有效。VForm的宽度。</td> 
+                            <td>String</td> 
+                            <td>-</td>
+                        </tr> 
+                                               
 
 
                         <tr><td>model</td> <td>表单数据对象</td> <td>Object</td> <td>-</td></tr> 
