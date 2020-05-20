@@ -31,7 +31,13 @@ const routers = [
         },
         component: (resolve) => require(['./views/components_wis/VGrid.vue'], resolve)        
     },
-
+    {
+        path: '/components/VForm',
+        meta: {
+            title: 'VForm 表单'
+        },
+        component: (resolve) => require(['./views/components_wis/VForm.vue'], resolve)        
+    },
 
 
 

@@ -31,8 +31,8 @@ const list = {
                     path: '/components/VGrid'
                 },
                 {
-                    title: 'Grid 宫格',
-                    path: '/components/grid'
+                    title: 'VForm 表单',
+                    path: '/components/VForm'
                 },
                 {
                     title: 'Panel 面板',
