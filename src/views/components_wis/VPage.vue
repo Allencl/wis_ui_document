@@ -9,7 +9,7 @@
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>
-                <Anchor title="VPage properties" h3></Anchor>
+                <Anchor title="VPage props" h3></Anchor>
                 <table>
                     <thead>
                         <tr>

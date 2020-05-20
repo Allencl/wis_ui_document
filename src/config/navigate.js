@@ -21,7 +21,11 @@ const list = {
                 {
                     title: 'VPage 页面组件',
                     path: '/components/VPage'
-                },                
+                },   
+                {
+                    title: 'VSearch 查询头',
+                    path: '/components/VSearch'
+                },                 
                 {
                     title: 'VGrid 表格',
                     path: '/components/VGrid'

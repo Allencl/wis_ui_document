@@ -18,6 +18,13 @@ const routers = [
         component: (resolve) => require(['./views/components_wis/VPage.vue'], resolve)        
     },
     {
+        path: '/components/VSearch',
+        meta: {
+            title: 'VSearch 查询头'
+        },
+        component: (resolve) => require(['./views/components_wis/VSearch.vue'], resolve)        
+    },    
+    {
         path: '/components/VGrid',
         meta: {
             title: 'VGrid 表格'
@@ -44,7 +51,7 @@ const routers = [
 
 
 
-    
+
 
     // 废除的
     {
