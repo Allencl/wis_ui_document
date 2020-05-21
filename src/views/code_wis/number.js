@@ -7,16 +7,14 @@ code.HTML = `
 		<VForm 
 			ref="maintainForm"  
 			:model="maintainForm" 
-			:title="标题" 
-			
+			:title="标题" 		
 			@submit="submit" 
-
 		>
 			<VFormItem  
-				v-model="maintainForm.name" 
-				type="text" 
-				label="姓名" 
-				name="name" 
+				v-model="maintainForm.num" 
+				type="number" 
+				label="数字" 
+				name="num" 
 				required
 			>
 			</VFormItem>
@@ -28,7 +26,7 @@ code.HTML = `
 
 		data () {
 			return {
-				maintainForm:{}
+				maintainForm:{num:1}
 			}
 		},
 		methods: {

@@ -13,13 +13,14 @@ code.HTML = `
 
 		>
 			<VFormItem  
-				v-model="maintainForm.name" 
-				type="text" 
-				label="姓名" 
-				name="name" 
-				required
+				v-model="maintainForm.select" 
+				type="select" 
+				label="下拉框" 
+				name="select" 
+				typeCode="SYSTEM_CONFIG_TYPE"
 			>
 			</VFormItem>
+
 		</VForm>
 	</VPage>
 </template>
@@ -28,7 +29,7 @@ code.HTML = `
 
 		data () {
 			return {
-				maintainForm:{}
+				maintainForm:{select:""}
 			}
 		},
 		methods: {
@@ -44,6 +45,7 @@ code.HTML = `
 		}
 	};
 </script>
+
 `;
 
 export default code;

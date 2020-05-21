@@ -43,6 +43,12 @@
                             <td>String</td>
                             <td>-</td>
                         </tr> 
+                        <tr>
+                            <td>permissionCode</td> 
+                            <td>权限控制，控制组件是否显示。</td> 
+                            <td>String</td>
+                            <td>-</td>
+                        </tr>                         
 
                         <tr><td>size</td> <td>输入框尺寸，可选值为<code>large</code>、<code>small</code>、<code>default</code>或者不设置</td> <td>String</td> <td>-</td></tr> 
                         <tr><td>placeholder</td> <td>占位文本</td> <td>String</td> <td>-</td></tr> 

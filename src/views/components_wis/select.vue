@@ -9,7 +9,7 @@
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>
-                <Anchor title="VForm props" h3></Anchor>
+                <Anchor title="VFormItem 下拉框 props" h3></Anchor>
                 <table>
                     <thead>
                         <tr>
@@ -22,101 +22,68 @@
                     <tbody>
                         <tr>
                             <td>type</td> 
-                            <td>页面类型。可选值Drawer、Modal、Page。</td> 
-                            <td>String</td> 
-                            <td>Drawer</td>
+                            <td>type 等于<code>select</code></td> 
+                            <td>String</td> <td>text</td>
                         </tr> 
                         <tr>
-                            <td>fullscreen</td> 
-                            <td>是否全屏。type等于Modal时有效。</td> 
-                            <td>Boolean</td> 
-                            <td>false</td>
-                        </tr> 
-                        <tr>
-                            <td>formName</td> 
-                            <td>form表单默认ref值。</td> 
+                            <td>typeCode</td> 
+                            <td>数据字典的名称。</td> 
                             <td>String</td> 
-                            <td>maintainForm</td>
+                            <td>-</td>
+                        </tr>     
+                        <tr>
+                            <td>v-model</td>
+                            <td>表单绑定的对象（v-model）。 </td>
+                            <td>Object</td>
+                            <td>{}</td>
+                        </tr>
+                        <tr>
+                            <td>name</td> 
+                            <td>表单名称，与v-model绑定值一致。</td> 
+                            <td>String</td>
+                            <td>-</td>
                         </tr>                         
                         <tr>
-                            <td>className</td> 
-                            <td>VForm class名称。</td> 
-                            <td>String</td> 
+                            <td>label</td> 
+                            <td>lable 名称。</td> 
+                            <td>String</td>
                             <td>-</td>
-                        </tr>  
+                        </tr>   
                         <tr>
-                            <td>classModal</td> 
-                            <td>type等于Modal时，Modal的class名称。</td> 
-                            <td>String</td> 
+                            <td>permissionCode</td> 
+                            <td>权限控制，控制组件是否显示。</td> 
+                            <td>String</td>
                             <td>-</td>
-                        </tr>  
-                        <tr>
-                            <td>submitTxt</td> 
-                            <td>提交按钮文字。</td> 
-                            <td>String</td> 
-                            <td>提交</td>
-                        </tr>                          
-                        <tr>
-                            <td>cancelTxt</td> 
-                            <td>取消按钮文字。</td> 
-                            <td>String</td> 
-                            <td>取消</td>
-                        </tr> 
-                        <tr>
-                            <td>cancelTxt</td> 
-                            <td>取消按钮文字。</td> 
-                            <td>String</td> 
-                            <td>取消</td>
-                        </tr> 
-                        <tr>
-                            <td>hideBtn</td> 
-                            <td>是否全部隐藏按钮。</td> 
-                            <td>Boolean</td> 
-                            <td>false</td>
-                        </tr> 
-                        <tr>
-                            <td>btnOk</td> 
-                            <td>是否隐藏提交按钮。</td> 
-                            <td>Boolean</td> 
-                            <td>false</td>
-                        </tr> 
-                        <tr>
-                            <td>btnCancel</td> 
-                            <td>是否隐藏取消按钮。</td> 
-                            <td>Boolean</td> 
-                            <td>false</td>
-                        </tr>      
-                        <tr>
-                            <td>autoBack</td> 
-                            <td>点击取消后，是否回到之前的路由地址，若没有回到home页。</td> 
-                            <td>Boolean</td> 
-                            <td>true</td>
-                        </tr>  
-                        <tr>
-                            <td>width</td> 
-                            <td>type等于Drawer、Modal时有效。VForm的宽度。</td> 
-                            <td>String</td> 
-                            <td>-</td>
-                        </tr> 
-                                               
-
-
-                        <tr><td>model</td> <td>表单数据对象</td> <td>Object</td> <td>-</td></tr> 
-                        <tr><td>rules</td> <td>表单验证规则，具体配置查看 <a href="https://github.com/yiminghe/async-validator" target="_blank"><i class="ivu-icon ivu-icon-social-github"></i> async-validator</a></td> <td>Object</td> <td>-</td></tr> 
-                        <tr><td>inline</td> <td>是否开启行内表单模式</td> <td>Boolean</td> <td>false</td></tr> 
-                        <tr><td>label-position</td> <td>表单域标签的位置，可选值为 <code>left</code>、<code>right</code>、<code>top</code></td> <td>String</td> <td>right</td></tr> 
-                        <tr><td>label-width</td> <td>表单域标签的宽度，所有的 FormItem 都会继承 Form 组件的 label-width 的值</td> <td>Number</td> <td>-</td></tr> 
-                        <tr><td>show-message</td> <td>是否显示校验错误信息</td> <td>Boolean</td> <td>true</td></tr> 
-                        <tr><td>autocomplete</td> <td>原生的 autocomplete 属性，可选值为 off 或 on</td> <td>String</td> <td>off</td></tr> 
-                        <tr><td>hide-required-mark <span class="ivu-badge"> <sup class="ivu-badge-count ivu-badge-count-alone">4.0.0</sup></span></td> <td>是否隐藏所有表单项的必选标记</td> <td>Boolean</td> <td>false</td></tr> 
-                        <tr><td>label-colon <span class="ivu-badge"> <sup class="ivu-badge-count ivu-badge-count-alone">4.0.0</sup></span></td> <td>是否自动在 label 名称后添加冒号</td> <td>Boolean</td> <td>false</td></tr> 
-                        <tr><td>disabled <span class="ivu-badge"> <sup class="ivu-badge-count ivu-badge-count-alone">4.0.0</sup></span></td> <td>是否禁用该表单内的所有组件（适用于具有 disabled 属性的表单类组件）</td> <td>Boolean</td> <td>false</td></tr>
+                        </tr>     
+                        <tr><td>multiple</td> <td>是否支持多选</td> <td>Boolean</td> <td>false</td></tr> 
+                        <tr><td>disabled</td> <td>是否禁用</td> <td>Boolean</td> <td>false</td></tr> 
+                        <tr><td>clearable</td> <td>是否可以清空选项，只在单选时有效</td> <td>Boolean</td> <td>false</td></tr> 
+                        <tr><td>filterable</td> <td>是否支持搜索</td> <td>Boolean</td> <td>false</td></tr> 
+                        <tr><td>filter-by-label <span class="ivu-badge"> <sup class="ivu-badge-count ivu-badge-count-alone">4.2.0</sup></span></td> <td>在搜索时，是否只按照 label 进行搜索</td> <td>Boolean</td> <td>false</td></tr> 
+                        <tr><td>remote</td> <td>是否使用远程搜索</td> <td>Boolean</td> <td>false</td></tr> 
+                        <tr><td>remote-method</td> <td>远程搜索的方法</td> <td>Function</td> <td>-</td></tr> 
+                        <tr><td>loading</td> <td>当前是否正在远程搜索</td> <td>Boolean</td> <td>false</td></tr> 
+                        <tr><td>loading-text</td> <td>远程搜索中的文字提示</td> <td>String</td> <td>加载中</td></tr> 
+                        <tr><td>label</td> <td>仅在 remote 模式下，初始化时使用。因为仅通过 value 无法得知选项的 label，需手动设置。</td> <td>String | Number | Array</td> <td>空</td></tr> 
+                        <tr><td>size</td> <td>选择框大小，可选值为<code>large</code>、<code>small</code>、<code>default</code>或者不填</td> <td>String</td> <td>-</td></tr> 
+                        <tr><td>placeholder</td> <td>选择框默认文字</td> <td>String</td> <td>请选择</td></tr> 
+                        <tr><td>not-found-text</td> <td>当下拉列表为空时显示的内容</td> <td>String</td> <td>无匹配数据</td></tr> 
+                        <tr><td>label-in-value</td> <td>在返回选项时，是否将 label 和 value 一并返回，默认只返回 value</td> <td>Boolean</td> <td>false</td></tr> 
+                        <tr><td>placement</td> <td>弹窗的展开方向，可选值为 <code>top</code>、<code>bottom</code>、<code>top-start</code>、<code>bottom-start</code>、<code>top-end</code>、<code>bottom-end</code></td> <td>String</td> <td>bottom-start</td></tr> 
+                        <tr><td>transfer</td> <td>是否将弹层放置于 body 内，在 Tabs、带有 fixed 的 Table 列内使用时，建议添加此属性，它将不受父级样式影响，从而达到更好的效果</td> <td>Boolean</td> <td>false</td></tr> 
+                        <tr><td>element-id</td> <td>给表单元素设置 <code>id</code>，详见 Form 用法。</td> <td>String</td> <td>-</td></tr> 
+                        <tr><td>transfer-class-name <span class="ivu-badge"> <sup class="ivu-badge-count ivu-badge-count-alone">3.3.0</sup></span></td> <td>开启 transfer 时，给浮层添加额外的 class 名称</td> <td>String</td> <td>-</td></tr> 
+                        <tr><td>prefix <span class="ivu-badge"> <sup class="ivu-badge-count ivu-badge-count-alone">3.4.0</sup></span></td> <td>在 Select 内显示图标</td> <td>String</td> <td>-</td></tr> 
+                        <tr><td>max-tag-count <span class="ivu-badge"> <sup class="ivu-badge-count ivu-badge-count-alone">3.4.0</sup></span></td> <td>多选时最多显示多少个 tag</td> <td>Number</td> <td>-</td></tr> 
+                        <tr><td>max-tag-placeholder <span class="ivu-badge"> <sup class="ivu-badge-count ivu-badge-count-alone">3.4.0</sup></span></td> <td>隐藏 tag 时显示的内容，参数是剩余项数量</td> <td>Function</td> <td>-</td></tr> 
+                        <tr><td>allow-create <span class="ivu-badge"> <sup class="ivu-badge-count ivu-badge-count-alone">4.0.0</sup></span></td> <td>是否允许用户创建新条目，需开启 filterable</td> <td>Boolean</td> <td>false</td></tr> 
+                        <tr><td>capture <span class="ivu-badge"> <sup class="ivu-badge-count ivu-badge-count-alone">4.0.0</sup></span></td> <td>是否开启 capture 模式，也可通过全局配置</td> <td>Boolean</td> <td>true</td></tr>
                     </tbody>
                 </table>
 
-                <Anchor title="VForm events" h3></Anchor>
+                <Anchor title="VFormItem 下拉框 events" h3></Anchor>
                 <table>
-                    <thead>
+                    <thead>                                    
                         
                         <tr>
                             <th>事件名</th>
@@ -126,36 +93,21 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>@submit</td>
-                            <td>表单提交。</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>@cancel</td>
-                            <td>点击取消触发。</td>
-                            <td>-</td>
-                        </tr> 
-                        <tr>
-                            <td>@on-validate</td>
-                            <td>任一表单项被校验后触发，返回表单项 prop、校验状态、错误消息。</td>
-                            <td>prop, status, error</td>
-                        </tr>                         
-                    </tbody>
-                </table>
-
-                <Anchor title="VForm methods" h3></Anchor>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>方法名</th> 
-                            <th>说明</th> 
-                            <th>参数</th>
-                        </tr>
-                    </thead> 
-                    <tbody>
-                        <tr><td>validate</td> <td>对整个表单进行校验，参数为检验完的回调，会返回一个 Boolean 表示成功与失败，支持 Promise</td> <td>callback</td></tr> 
-                        <tr><td>validateField</td> <td>对部分表单字段进行校验的方法，参数1为需校验的 prop，参数2为检验完回调，返回错误信息</td> <td>callback</td></tr> 
-                        <tr><td>resetFields</td> <td>对整个表单进行重置，将所有字段值重置为空并移除校验结果</td> <td>无</td></tr>
+                            <td>
+                                @on-change
+                                <i class="i-icon i-icon-collection_fill" style="color:#ed3f14;font-size:16px"></i>
+                            </td> 
+                            <td>
+                                数据改变时触发。
+                                <span class="ivu-badge"> <sup class="ivu-badge-count ivu-badge-count-alone">建议优先使用事件。</sup></span>    
+                            </td> 
+                            <td>event</td>
+                        </tr>     
+                        <tr><td>@on-query-change</td> <td>搜索词改变时触发</td> <td>query</td></tr> 
+                        <tr><td>@on-clear</td> <td>点击清空按钮时触发</td> <td>无</td></tr> 
+                        <tr><td>@on-open-change</td> <td>下拉框展开或收起时触发</td> <td>true / false</td></tr> 
+                        <tr><td>@on-create <span class="ivu-badge"> <sup class="ivu-badge-count ivu-badge-count-alone">4.0.0</sup></span></td> <td>新建条目时触发</td> <td>query</td></tr> 
+                        <tr><td>@on-select <span class="ivu-badge"> <sup class="ivu-badge-count ivu-badge-count-alone">4.1.0</sup></span></td> <td>选择项目时触发</td> <td>当前选中项</td></tr>
                     </tbody>
                 </table>
 

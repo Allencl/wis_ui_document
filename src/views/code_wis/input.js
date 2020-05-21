@@ -7,10 +7,8 @@ code.HTML = `
 		<VForm 
 			ref="maintainForm"  
 			:model="maintainForm" 
-			:title="标题" 
-			
+			:title="标题" 	
 			@submit="submit" 
-
 		>
 			<VFormItem  
 				v-model="maintainForm.name" 
@@ -28,7 +26,7 @@ code.HTML = `
 
 		data () {
 			return {
-				maintainForm:{}
+				maintainForm:{name:""}
 			}
 		},
 		methods: {
