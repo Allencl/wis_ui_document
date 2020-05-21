@@ -16,7 +16,7 @@ const list = {
     components: [
         {
             type: 'Layout',
-            title: 'form 组件',
+            title: '基础组件',
             list: [
                 {
                     title: 'VPage 页面组件',
