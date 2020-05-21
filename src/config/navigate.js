@@ -35,16 +35,16 @@ const list = {
                     path: '/components/VForm'
                 },
                 {
-                    title: 'Panel 面板',
-                    path: '/components/panel'
+                    title: 'VFormItem 输入框',
+                    path: '/components/input'
                 },
                 {
-                    title: 'List 列表',
-                    path: '/components/list'
+                    title: 'VFormItem 数字框',
+                    path: '/components/number'
                 },
                 {
-                    title: 'Card 卡片',
-                    path: '/components/card'
+                    title: 'VFormItem 下拉框',
+                    path: '/components/select'
                 },
             ]
         },

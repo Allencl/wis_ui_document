@@ -38,9 +38,27 @@ const routers = [
         },
         component: (resolve) => require(['./views/components_wis/VForm.vue'], resolve)        
     },
-
-
-
+    {
+        path: '/components/input',
+        meta: {
+            title: 'VFormItem 输入框'
+        },
+        component: (resolve) => require(['./views/components_wis/input.vue'], resolve)        
+    },
+    {
+        path: '/components/number',
+        meta: {
+            title: 'VFormItem 数字框'
+        },
+        component: (resolve) => require(['./views/components_wis/number.vue'], resolve)        
+    },
+    {
+        path: '/components/select',
+        meta: {
+            title: 'VFormItem 下拉框'
+        },
+        component: (resolve) => require(['./views/components_wis/select.vue'], resolve)        
+    },
 
 
 
