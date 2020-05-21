@@ -59,7 +59,13 @@ const routers = [
         },
         component: (resolve) => require(['./views/components_wis/select.vue'], resolve)        
     },
-
+    {
+        path: '/components/comboBox',
+        meta: {
+            title: 'VFormItem 查询框'
+        },
+        component: (resolve) => require(['./views/components_wis/comboBox.vue'], resolve)        
+    },
 
 
 

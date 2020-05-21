@@ -46,6 +46,10 @@ const list = {
                     title: 'VFormItem 下拉框',
                     path: '/components/select'
                 },
+                {
+                    title: 'VFormItem 查询框',
+                    path: '/components/comboBox'
+                },                
             ]
         },
         // {

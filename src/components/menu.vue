@@ -6,6 +6,12 @@
         z-index: 901;
         box-shadow: 0 1px 1px rgba(0,0,0,.08);
     }
+
+    .wrapper-header-nav-search .ivu-select {
+        width:350px;
+        border-bottom:1px solid #ccc;
+    }
+
 </style>
 <template>
     <Menu mode="horizontal" :active-name="currentActiveKey" @on-select="handleSelect">
