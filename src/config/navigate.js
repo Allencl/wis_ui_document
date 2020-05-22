@@ -49,7 +49,11 @@ const list = {
                 {
                     title: 'VFormItem 查询框',
                     path: '/components/comboBox'
-                },                
+                },  
+                {
+                    title: 'VFormItem 日期选择',
+                    path: '/components/datePicker'
+                },                                
             ]
         },
         // {

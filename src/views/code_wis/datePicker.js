@@ -11,26 +11,22 @@ code.HTML = `
 			@submit="submit" 
 		>
 			<VFormItem  
-				v-model="maintainForm.typeId" 
-				name="typeId" 
-				type="comboBox" 
-				label="查询框" 
-				pattern="type/list.do"  
-				:nameKey="['name','code']" 
-				:columnTitle='["名称","代码"]' 
-				:paging="true" 
+				v-model="maintainForm.time" 
+				label="时间选择" 
+				name="time" 
+				type="date"
 			>
 			</VFormItem>
+
 
 		</VForm>
 	</VPage>
 </template>
 <script>
 	export default {
-
 		data () {
 			return {
-				maintainForm:{typeId:""}
+				maintainForm:{time:""}
 			}
 		},
 		methods: {

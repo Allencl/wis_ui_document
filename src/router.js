@@ -66,7 +66,13 @@ const routers = [
         },
         component: (resolve) => require(['./views/components_wis/comboBox.vue'], resolve)        
     },
-
+    {
+        path: '/components/datePicker',
+        meta: {
+            title: 'VFormItem 日期选择'
+        },
+        component: (resolve) => require(['./views/components_wis/datePicker.vue'], resolve)        
+    },
 
 
 
