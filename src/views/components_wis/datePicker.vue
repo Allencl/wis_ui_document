@@ -22,7 +22,8 @@
                     <tbody>
                         <tr>
                             <td>type</td> 
-                            <td>type 等于<code>date</code></td> 
+                            <!-- <td>type 等于<code>date</code></td> -->
+                            <td>显示类型，可选值为 <code>date</code>、<code>daterange</code>、<code>datetime</code>、<code>datetimerange</code>、<code>year</code>、<code>month</code></td> 
                             <td>String</td> <td>text</td>
                         </tr> 
                         <tr>
@@ -50,14 +51,14 @@
                             <td>-</td>
                         </tr>                         
                         
-                        <tr><td>type</td> <td>显示类型，可选值为 <code>date</code>、<code>daterange</code>、<code>datetime</code>、<code>datetimerange</code>、<code>year</code>、<code>month</code></td> <td>String</td> <td>date</td></tr> 
+                        <!-- <tr><td>type</td> <td>显示类型，可选值为 <code>date</code>、<code>daterange</code>、<code>datetime</code>、<code>datetimerange</code>、<code>year</code>、<code>month</code></td> <td>String</td> <td>date</td></tr> 
                         <tr>
                             <td>value</td> 
                             <td>
                                                 日期，可以是 JavaScript 的 Date，例如 <strong>new Date()</strong>，也可以是标准的日期格式，点击右边查看<br>
                                                 注意：value 使用 v-model 时，值是 Date 类型，可以配合 @on-change 使用
                             </td> <td><a href="javascript:void(0)"><i class="ivu-icon ivu-icon-information-circled"></i> Date</a></td> <td>-</td>
-                        </tr> 
+                        </tr>  -->
                         <tr><td>format</td> <td>展示的日期格式</td> <td><a href="javascript:void(0)"><i class="ivu-icon ivu-icon-information-circled"></i> Date</a></td> <td><ul><li><strong>date | daterange</strong>：<br>yyyy-MM-dd</li> <li><strong>datetime | datetimerange</strong>：<br>yyyy-MM-dd HH:mm:ss</li> <li><strong>year</strong>：yyyy</li> <li><strong>month</strong>：yyyy-MM</li></ul></td></tr> 
                         <tr><td>placement</td> <td>日期选择器出现的位置，可选值为<code>top</code><code>top-start</code><code>top-end</code><code>bottom</code><code>bottom-start</code><code>bottom-end</code><code>left</code><code>left-start</code><code>left-end</code><code>right</code><code>right-start</code><code>right-end</code>，2.12.0 版本开始支持自动识别</td> <td>String</td> <td>bottom-start</td></tr> 
                         <tr><td>placeholder</td> <td>占位文本</td> <td>String</td> <td>空</td></tr> 
